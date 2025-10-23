@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidad | Boyer Marketing</title>
+  <meta name="description" content="Política de Privacidad de Boyer Marketing. Conozca qué datos recopilamos, cómo los usamos, sus derechos y cómo ejercerlos." />
+  <style>
+    :root{
+      --bg: #0b0c10;
+      --card: #121318;
+      --text: #e8e8ea;
+      --muted: #b5b7c0;
+      --brand: #6ee7b7;
+      --accent: #60a5fa;
+      --border: #232635;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(110,231,183,.08), transparent 40%),
+                  radial-gradient(900px 500px at 120% 0%, rgba(96,165,250,.08), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+    header{
+      position:sticky; top:0; backdrop-filter: blur(8px); background: linear-gradient(to bottom, rgba(11,12,16,.85), rgba(11,12,16,.55));
+      border-bottom:1px solid var(--border); z-index:10;
+    }
+    .container{max-width:1100px; margin:0 auto; padding: 1rem 1.25rem}
+    .brand{display:flex; align-items:center; gap:.75rem}
+    .logo{width:34px;height:34px; border-radius:10px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: var(--shadow)}
+    .brand h1{font-size:1.1rem; margin:0}
+    .tag{display:inline-block; padding:.25rem .5rem; border:1px solid var(--border); border-radius:999px; font-size:.8rem; color:var(--muted)}
+
+    .hero{padding: 2.25rem 1.25rem 0}
+    .hero h2{font-size: clamp(1.6rem, 2.2vw + 1rem, 2.4rem); margin:.2rem 0}
+    .hero p{color:var(--muted); margin:.25rem 0 1rem}
+
+    .grid{display:grid; grid-template-columns: 1fr; gap:1rem; padding: 1rem 1.25rem 2rem}
+    @media (min-width: 960px){
+      .grid{grid-template-columns: 280px 1fr}
+    }
+
+    .card{background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)); border:1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow)}
+    .card .inner{padding:1.25rem}
+
+    nav ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:.25rem}
+    nav a{display:block; padding:.55rem .7rem; border-radius:12px; color:var(--text); text-decoration:none; border:1px solid transparent}
+    nav a:hover{border-color:var(--border); background: rgba(255,255,255,.02)}
+    nav .small{font-size:.85rem; color:var(--muted)}
+
+    h3{font-size:1.25rem; margin:1.25rem 0 .4rem}
+    section{scroll-margin-top:90px}
+
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:.85em; padding:.15rem .35rem; border:1px solid var(--border); border-radius:6px}
+
+    .pill{display:inline-flex; align-items:center; gap:.4rem; background: rgba(110,231,183,.12); color:#d1fae5; border:1px solid rgba(110,231,183,.25); padding:.25rem .6rem; border-radius:999px; font-size:.8rem}
+
+    .muted{color:var(--muted)}
+
+    .table{width:100%; border-collapse: collapse; overflow:hidden; border-radius:12px; border:1px solid var(--border)}
+    .table th,.table td{padding:.7rem .8rem; border-bottom:1px solid var(--border); vertical-align:top}
+    .table th{ text-align:left; color: var(--muted); font-weight:600; background: rgba(255,255,255,.02)}
+
+    .footer{color:var(--muted); font-size:.95rem; padding: 1.25rem}
+    .footer a{color:var(--text)}
+    .callout{border:1px solid var(--border); padding: .9rem 1rem; border-radius: 12px; background: rgba(255,255,255,.02)}
+    .toc-title{font-weight:700; color:var(--muted); margin-bottom:.5rem}
+    .update{font-size:.9rem; color:var(--muted)}
+    .btn{display:inline-block; padding:.6rem .9rem; border-radius:12px; border:1px solid var(--border); text-decoration:none; color:var(--text)}
+    .btn:hover{background: rgba(255,255,255,.04)}
+    .section-title{display:flex; align-items:center; gap:.5rem}
+    .section-title .dot{width:.55rem; height:.55rem; border-radius:999px; background: linear-gradient(135deg, var(--brand), var(--accent))}
+
+    /* Print-friendly */
+    @media print{
+      header, .card.nav, .btn{display:none}
+      body{background:#fff; color:#000}
+      .card{border-color:#ddd; box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <header aria-label="Encabezado">
+    <div class="container">
+      <div class="brand" role="banner">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Boyer Marketing</h1>
+        <span class="tag" aria-label="Documento legal">Política de Privacidad</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container hero">
+    <p class="pill">Transparencia y control</p>
+    <h2>Cómo tratamos tu información personal</h2>
+    <p class="update">Vigente desde: <time datetime="2025-10-22">22 de octubre de 2025</time></p>
+    <p class="muted">Esta política explica qué datos recopilamos, con qué fines, las bases legales que nos permiten tratarlos, con quién los compartimos, cuánto tiempo los conservamos y qué derechos puedes ejercer. Se aplica a los sitios, campañas y servicios de <strong>Boyer Marketing</strong> que enlacen a esta página.</p>
+  </div>
+
+  <div class="grid container">
+    <!-- Índice -->
+    <aside class="card nav" aria-label="Índice de contenidos">
+      <div class="inner">
+        <div class="toc-title">Contenido</div>
+        <nav aria-label="Tabla de contenidos">
+          <ul>
+            <li><a href="#responsable">1. Responsable y contacto</a></li>
+            <li><a href="#alcance">2. Alcance</a></li>
+            <li><a href="#datos">3. Datos que recopilamos</a></li>
+            <li><a href="#fuentes">4. Orígenes de los datos</a></li>
+            <li><a href="#finalidades">5. Finalidades y bases legales</a></li>
+            <li><a href="#cookies">6. Cookies y tecnologías similares</a></li>
+            <li><a href="#compartir">7. Con quién compartimos datos</a></li>
+            <li><a href="#transferencias">8. Transferencias internacionales</a></li>
+            <li><a href="#retencion">9. Plazos de conservación</a></li>
+            <li><a href="#seguridad">10. Seguridad</a></li>
+            <li><a href="#derechos">11. Tus derechos</a></li>
+            <li><a href="#menores">12. Menores de edad</a></li>
+            <li><a href="#proveedores">13. Proveedores/Encargados</a></li>
+            <li><a href="#enlaces">14. Enlaces de terceros</a></li>
+            <li><a href="#cambios">15. Cambios en esta política</a></li>
+            <li><a href="#contacto">16. Cómo contactarnos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="card" id="contenido" role="main">
+      <div class="inner">
+        <section id="responsable">
+          <div class="section-title"><span class="dot"></span><h3>1. Responsable y contacto</h3></div>
+          <p><strong>Responsable:</strong> Boyer Marketing ("Boyer Marketing", "nosotros").</p>
+          <p><strong>Email:</strong> <a href="mailto:privacy@boyermarketing.com" class="btn">privacy@boyermarketing.com</a></p>
+          <p><strong>Dirección postal:</strong> [Añadir dirección legal de la empresa].</p>
+          <p class="muted">Si eres residente del EEE/Reino Unido y deseas contactar a nuestro Delegado de Protección de Datos (DPO), escribe a la dirección anterior indicando “A/A DPO”.</p>
+        </section>
+
+        <section id="alcance">
+          <div class="section-title"><span class="dot"></span><h3>2. Alcance</h3></div>
+          <p>Esta política aplica a sitios web, formularios, anuncios, páginas de destino, newsletters, eventos y cualquier servicio de Boyer Marketing que la refiera. No aplica a servicios de terceros que tengan sus propias políticas.</p>
+        </section>
+
+        <section id="datos">
+          <div class="section-title"><span class="dot"></span><h3>3. Datos que recopilamos</h3></div>
+          <table class="table" aria-label="Tipos de datos">
+            <thead>
+              <tr><th>Tipo</th><th>Ejemplos</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Identificación y contacto</td>
+                <td>Nombre, apellidos, email, teléfono, empresa, cargo, país.</td>
+              </tr>
+              <tr>
+                <td>Datos de uso y técnicos</td>
+                <td>Dirección IP, identificadores de dispositivo, páginas visitadas, clics, duración de sesión, tipo de navegador/sistema, idioma, región, campañas que te dirigieron a nosotros.</td>
+              </tr>
+              <tr>
+                <td>Preferencias y comunicaciones</td>
+                <td>Suscripciones, respuestas a encuestas, interacciones con emails (aperturas, rebotes), intereses declarados.</td>
+              </tr>
+              <tr>
+                <td>Datos transaccionales</td>
+                <td>Pedidos, historial de facturación y pagos (procesados por pasarelas externas), soporte.</td>
+              </tr>
+              <tr>
+                <td>Contenido aportado</td>
+                <td>Mensajes, reseñas, formularios, archivos que subas voluntariamente.</td>
+              </tr>
+              <tr>
+                <td>Categorías especiales</td>
+                <td>No pretendemos recopilar datos sensibles (salud, creencias, etc.). Evita proporcionarlos.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="fuentes">
+          <div class="section-title"><span class="dot"></span><h3>4. Orígenes de los datos</h3></div>
+          <ul>
+            <li>Directamente de ti (formularios, email, teléfono, eventos).</li>
+            <li>Automáticamente al usar nuestros sitios/servicios (cookies, píxeles y registros).</li>
+            <li>De terceros: redes publicitarias, socios, herramientas de analítica, fuentes públicas y redes sociales conforme a sus términos.</li>
+          </ul>
+        </section>
+
+        <section id="finalidades">
+          <div class="section-title"><span class="dot"></span><h3>5. Finalidades y bases legales</h3></div>
+          <div class="callout">
+            <p><strong>Base legal (EEE/UK):</strong> consentimiento, ejecución de contrato, interés legítimo o cumplimiento legal. En Latinoamérica, aplicamos principios de licitud, finalidad, proporcionalidad y consentimiento informado según corresponda.</p>
+          </div>
+          <table class="table" aria-label="Finalidades y bases legales">
+            <thead>
+              <tr><th>Finalidad</th><th>Base legal</th><th>Descripción</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Prestar y mejorar servicios</td>
+                <td>Ejecución de contrato; Interés legítimo</td>
+                <td>Operar sitios, atender solicitudes, soporte, personalizar experiencias y mejorar calidad.</td>
+              </tr>
+              <tr>
+                <td>Marketing y publicidad</td>
+                <td>Consentimiento; Interés legítimo</td>
+                <td>Newsletters, segmentación, remarketing, medición de campañas. Puedes darte de baja en cualquier momento.</td>
+              </tr>
+              <tr>
+                <td>Analítica y estadísticas</td>
+                <td>Consentimiento (cookies analíticas); Interés legítimo</td>
+                <td>Medir tráfico, rendimiento y detectar errores.</td>
+              </tr>
+              <tr>
+                <td>Seguridad y prevención de fraude</td>
+                <td>Interés legítimo; Obligación legal</td>
+                <td>Detección de incidentes, protección de cuentas y sistemas.</td>
+              </tr>
+              <tr>
+                <td>Obligaciones legales</td>
+                <td>Cumplimiento legal</td>
+                <td>Requerimientos fiscales, regulatorios y atención de autoridades.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="cookies">
+          <div class="section-title"><span class="dot"></span><h3>6. Cookies y tecnologías similares</h3></div>
+          <p>Usamos cookies necesarias para el funcionamiento del sitio y, con tu consentimiento cuando sea requerido, cookies analíticas y de marketing. Puedes administrar tus preferencias desde el banner o los ajustes del navegador.</p>
+          <ul>
+            <li><strong>Necesarias:</strong> habilitan funciones básicas como navegación y seguridad.</li>
+            <li><strong>Analíticas:</strong> ayudan a entender el uso del sitio.</li>
+            <li><strong>Marketing:</strong> permiten personalizar anuncios y medir su eficacia.</li>
+          </ul>
+          <p>También podemos usar etiquetas de píxel, SDKs y almacenamiento local. Consulta nuestra <a href="#" rel="nofollow">Política de Cookies</a> para más detalle.</p>
+        </section>
+
+        <section id="compartir">
+          <div class="section-title"><span class="dot"></span><h3>7. Con quién compartimos datos</h3></div>
+          <p>Podemos compartir datos con:</p>
+          <ul>
+            <li><strong>Proveedores de servicios</strong> que actúan por cuenta de Boyer Marketing (alojamiento, analítica, email, atención al cliente, pagos) bajo contratos de confidencialidad y protección de datos.</li>
+            <li><strong>Socios y afiliados</strong> cuando sea necesario para ofrecerte un servicio o con tu consentimiento.</li>
+            <li><strong>Autoridades</strong> cuando la ley lo exija o para proteger derechos, seguridad y cumplimiento.</li>
+            <li><strong>Reorganizaciones empresariales</strong> (fusión, adquisición) conforme a las leyes aplicables.</li>
+          </ul>
+        </section>
+
+        <section id="transferencias">
+          <div class="section-title"><span class="dot"></span><h3>8. Transferencias internacionales</h3></div>
+          <p>Si transferimos datos fuera de tu país, aplicaremos salvaguardas adecuadas (por ejemplo, Cláusulas Contractuales Tipo de la UE/UK, evaluaciones de impacto y medidas técnicas y organizativas) para proteger tu información.</p>
+        </section>
+
+        <section id="retencion">
+          <div class="section-title"><span class="dot"></span><h3>9. Plazos de conservación</h3></div>
+          <p>Conservamos los datos solo el tiempo necesario para las finalidades descritas y según plazos legales aplicables. Cuando ya no sea necesario, los eliminamos o anonimizamos de forma segura.</p>
+        </section>
+
+        <section id="seguridad">
+          <div class="section-title"><span class="dot"></span><h3>10. Seguridad</h3></div>
+          <p>Implementamos medidas técnicas y organizativas razonables para proteger los datos personales contra accesos no autorizados, pérdida, alteración o divulgación. Ningún sistema es 100% seguro, pero trabajamos continuamente para mejorar nuestra postura de seguridad.</p>
+        </section>
+
+        <section id="derechos">
+          <div class="section-title"><span class="dot"></span><h3>11. Tus derechos</h3></div>
+          <p>Dependiendo de tu jurisdicción, podrías ejercer los siguientes derechos sobre tus datos:</p>
+          <ul>
+            <li><strong>Acceso</strong> a la información que tenemos sobre ti.</li>
+            <li><strong>Rectificación</strong> de datos inexactos o incompletos.</li>
+            <li><strong>Supresión</strong> ("derecho al olvido") cuando proceda.</li>
+            <li><strong>Oposición</strong> al tratamiento, incluido marketing directo.</li>
+            <li><strong>Limitación</strong> del tratamiento en determinados supuestos.</li>
+            <li><strong>Portabilidad</strong> de tus datos.</li>
+            <li><strong>Retirar el consentimiento</strong> en cualquier momento cuando el tratamiento se base en él.</li>
+            <li><strong>Reclamar ante una autoridad</strong> de control competente.</li>
+          </ul>
+          <p>Para ejercerlos, escríbenos a <a href="mailto:privacy@boyermarketing.com">privacy@boyermarketing.com</a> indicando tu solicitud y aportando información suficiente para verificar tu identidad.</p>
+        </section>
+
+        <section id="menores">
+          <div class="section-title"><span class="dot"></span><h3>12. Menores de edad</h3></div>
+          <p>Nuestros servicios no se dirigen a menores de 16 años y no recopilamos intencionalmente su información. Si crees que un menor nos ha proporcionado datos, contáctanos para eliminarlos.</p>
+        </section>
+
+        <section id="proveedores">
+          <div class="section-title"><span class="dot"></span><h3>13. Proveedores y encargados del tratamiento</h3></div>
+          <p>Podemos emplear soluciones de terceros para alojamiento, analítica, automatización de marketing, pagos y soporte. Mantenemos acuerdos de tratamiento de datos (DPA) y evaluaciones de seguridad con estos proveedores.</p>
+        </section>
+
+        <section id="enlaces">
+          <div class="section-title"><span class="dot"></span><h3>14. Enlaces de terceros</h3></div>
+          <p>Nuestros sitios pueden incluir enlaces a sitios de terceros. No somos responsables de sus prácticas de privacidad. Revisa sus políticas antes de proporcionarles información.</p>
+        </section>
+
+        <section id="cambios">
+          <div class="section-title"><span class="dot"></span><h3>15. Cambios en esta política</h3></div>
+          <p>Podemos actualizar esta política para reflejar cambios legales, técnicos o de negocio. Publicaremos la versión actualizada con la fecha de vigencia indicada al inicio. Si los cambios son significativos, te lo notificaremos por medios razonables.</p>
+        </section>
+
+        <section id="contacto">
+          <div class="section-title"><span class="dot"></span><h3>16. Cómo contactarnos</h3></div>
+          <p>Si tienes preguntas o deseas ejercer tus derechos, contáctanos en <a href="mailto:privacy@boyermarketing.com">privacy@boyermarketing.com</a>.</p>
+          <p class="muted">Para solicitudes relacionadas con datos de campañas concretas, por favor indica la URL o el identificador de la campaña.</p>
+        </section>
+
+        <hr style="border:0; border-top:1px solid var(--border); margin:1.5rem 0" />
+        <p class="muted">Este documento es de carácter informativo y no constituye asesoría legal. Considera adaptar el contenido a tus operaciones, jurisdicción y obligaciones regulatorias específicas.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer container" role="contentinfo">
+    <p>© <span id="year"></span> Boyer Marketing • <a href="#contacto">Privacidad</a> • <a href="#cookies">Cookies</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
